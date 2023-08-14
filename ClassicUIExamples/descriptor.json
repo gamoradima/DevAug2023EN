@@ -1,0 +1,17 @@
+﻿{
+  "Descriptor": {
+    "UId": "c4be279c-7709-bc7e-afb0-f038aee19b17",
+    "Name": "ClassicUIExamples",
+    "Type": 1,
+    "ModifiedOnUtc": "\/Date(1692027714000)\/",
+    "Maintainer": "Customer",
+    "ProjectPath": "Files/ClassicUIExamples.csproj",
+    "DependsOn": [
+      {
+        "UId": "d7559847-f38e-410c-baee-6f43bbe80d42",
+        "PackageVersion": "7.8.0",
+        "Name": "SalesEnterpriseSoftkey_ENU"
+      }
+    ]
+  }
+}
