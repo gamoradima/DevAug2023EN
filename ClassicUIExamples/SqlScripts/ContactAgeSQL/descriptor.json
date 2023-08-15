@@ -1,0 +1,11 @@
+﻿{
+  "SqlScript": {
+    "UId": "04d5adca-080f-9007-2be4-43c3ba410ddc",
+    "Name": "ContactAgeSQL",
+    "DBEngineType": 0,
+    "InstallType": 0,
+    "ModifiedOnUtc": "\/Date(1692113533000)\/",
+    "BackwardCompatibilityConfirmed": false,
+    "DependsOn": []
+  }
+}
