@@ -4,6 +4,7 @@
     "Name": "UsrAutoAddRealtyVisitsFreedomUIProcess",
     "ModifiedOnUtc": "\/Date(1692974655000)\/",
     "ManagerName": "ProcessSchemaManager",
-    "Caption": "Auto add realty visits (FreedomUI)"
+    "Caption": "Auto add realty visits (FreedomUI)",
+    "DependsOn": []
   }
 }

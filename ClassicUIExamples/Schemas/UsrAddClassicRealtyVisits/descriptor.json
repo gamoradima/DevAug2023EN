@@ -4,6 +4,7 @@
     "Name": "UsrAddClassicRealtyVisits",
     "ModifiedOnUtc": "\/Date(1692978834000)\/",
     "ManagerName": "ProcessSchemaManager",
-    "Caption": "Add Classic Realty Visits process"
+    "Caption": "Add Classic Realty Visits process",
+    "DependsOn": []
   }
 }

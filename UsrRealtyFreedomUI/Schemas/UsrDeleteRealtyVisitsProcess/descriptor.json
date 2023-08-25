@@ -4,6 +4,7 @@
     "Name": "UsrDeleteRealtyVisitsProcess",
     "ModifiedOnUtc": "\/Date(1692975242000)\/",
     "ManagerName": "ProcessSchemaManager",
-    "Caption": "Delete realty visits process"
+    "Caption": "Delete realty visits process",
+    "DependsOn": []
   }
 }

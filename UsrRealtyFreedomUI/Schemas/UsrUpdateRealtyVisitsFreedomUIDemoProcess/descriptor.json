@@ -4,6 +4,7 @@
     "Name": "UsrUpdateRealtyVisitsFreedomUIDemoProcess",
     "ModifiedOnUtc": "\/Date(1692974938000)\/",
     "ManagerName": "ProcessSchemaManager",
-    "Caption": "Update realty visits (FreedomUI) demo process"
+    "Caption": "Update realty visits (FreedomUI) demo process",
+    "DependsOn": []
   }
 }
