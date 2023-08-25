@@ -2,9 +2,8 @@
   "Descriptor": {
     "UId": "b3768d6b-222a-45dc-8bee-bca6ba5c2f5f",
     "Name": "UsrAutoAddRealtyVisitsFreedomUIProcess",
-    "ModifiedOnUtc": "\/Date(1692633777000)\/",
+    "ModifiedOnUtc": "\/Date(1692974655000)\/",
     "ManagerName": "ProcessSchemaManager",
-    "Caption": "Auto add realty visits (FreedomUI)",
-    "DependsOn": []
+    "Caption": "Auto add realty visits (FreedomUI)"
   }
 }

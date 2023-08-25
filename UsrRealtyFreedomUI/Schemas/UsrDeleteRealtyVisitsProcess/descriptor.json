@@ -1,0 +1,9 @@
+﻿{
+  "Descriptor": {
+    "UId": "c29df7de-24fb-4689-9086-760f5bf3c65e",
+    "Name": "UsrDeleteRealtyVisitsProcess",
+    "ModifiedOnUtc": "\/Date(1692975242000)\/",
+    "ManagerName": "ProcessSchemaManager",
+    "Caption": "Delete realty visits process"
+  }
+}

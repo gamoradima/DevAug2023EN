@@ -19,7 +19,10 @@
 			<Item Name="LocalizableStrings.GridDetailSearchFilter_ncdiu9f_placeholder.Value" Value="Search" />
 			<Item Name="LocalizableStrings.GridDetailSettingsBtn_7l2e5tz_caption.Value" Value="Actions" />
 			<Item Name="LocalizableStrings.MenuItem_3m3xwz6_caption.Value" Value="Calculate average price" />
+			<Item Name="LocalizableStrings.MenuItem_50showg_caption.Value" Value="Update visits" />
 			<Item Name="LocalizableStrings.MenuItem_hbem44o_caption.Value" Value="Run web service" />
+			<Item Name="LocalizableStrings.MenuItem_shwnt0s_caption.Value" Value="Add visits" />
+			<Item Name="LocalizableStrings.MenuItem_ybjs4pe_caption.Value" Value="Delete visits" />
 			<Item Name="LocalizableStrings.NumberInput_u0rl9sb_label.Value" Value="Number" />
 		</Items>
 	</Group>

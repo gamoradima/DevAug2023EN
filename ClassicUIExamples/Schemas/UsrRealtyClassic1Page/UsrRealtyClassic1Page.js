@@ -26,6 +26,14 @@ define("UsrRealtyClassic1Page", ["ServiceHelper"], function(ServiceHelper) {
 					"masterColumn": "Id",
 					"detailColumn": "UsrRealtyClassic"
 				}
+			},
+			"UsrSchema6d94734cDetail4e4540ad": {
+				"schemaName": "UsrRealtyVisitClassicDetailGrid",
+				"entitySchemaName": "UsrRealtyVisitClassic",
+				"filter": {
+					"detailColumn": "UsrParentRealty",
+					"masterColumn": "Id"
+				}
 			}
 		}/**SCHEMA_DETAILS*/,
 		businessRules: /**SCHEMA_BUSINESS_RULES*/{
@@ -208,7 +216,7 @@ define("UsrRealtyClassic1Page", ["ServiceHelper"], function(ServiceHelper) {
 				"name": "MyButton",
 				"values": {
 					"layout": {
-						"colSpan": 8,
+						"colSpan": 24,
 						"rowSpan": 1,
 						"column": 0,
 						"row": 4,
@@ -235,9 +243,9 @@ define("UsrRealtyClassic1Page", ["ServiceHelper"], function(ServiceHelper) {
 				"name": "RunWebServiceButton",
 				"values": {
 					"layout": {
-						"colSpan": 12,
+						"colSpan": 24,
 						"rowSpan": 1,
-						"column": 9,
+						"column": 0,
 						"row": 4,
 						"layoutName": "ProfileContainer"
 					},
@@ -332,10 +340,10 @@ define("UsrRealtyClassic1Page", ["ServiceHelper"], function(ServiceHelper) {
 			},
 			{
 				"operation": "insert",
-				"name": "NotesAndFilesTab",
+				"name": "Tab1db25282TabLabel",
 				"values": {
 					"caption": {
-						"bindTo": "Resources.Strings.NotesAndFilesTabCaption"
+						"bindTo": "Resources.Strings.Tab1db25282TabLabelTabCaption"
 					},
 					"items": [],
 					"order": 0
@@ -343,6 +351,31 @@ define("UsrRealtyClassic1Page", ["ServiceHelper"], function(ServiceHelper) {
 				"parentName": "Tabs",
 				"propertyName": "tabs",
 				"index": 0
+			},
+			{
+				"operation": "insert",
+				"name": "UsrSchema6d94734cDetail4e4540ad",
+				"values": {
+					"itemType": 2,
+					"markerValue": "added-detail"
+				},
+				"parentName": "Tab1db25282TabLabel",
+				"propertyName": "items",
+				"index": 0
+			},
+			{
+				"operation": "insert",
+				"name": "NotesAndFilesTab",
+				"values": {
+					"caption": {
+						"bindTo": "Resources.Strings.NotesAndFilesTabCaption"
+					},
+					"items": [],
+					"order": 1
+				},
+				"parentName": "Tabs",
+				"propertyName": "tabs",
+				"index": 1
 			},
 			{
 				"operation": "insert",
@@ -400,7 +433,7 @@ define("UsrRealtyClassic1Page", ["ServiceHelper"], function(ServiceHelper) {
 				"operation": "merge",
 				"name": "ESNTab",
 				"values": {
-					"order": 1
+					"order": 2
 				}
 			}
 		]/**SCHEMA_DIFF*/

@@ -22,10 +22,6 @@ define("UsrRealtyFreedomUI_ListPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, functi
 				"operation": "merge",
 				"name": "DataTable",
 				"values": {
-					"layoutConfig": {
-						"basis": "100%",
-						"width": 300
-					},
 					"columns": [
 						{
 							"id": "f252f581-0ccf-44ac-b7c9-c00df2ad9919",
@@ -44,8 +40,12 @@ define("UsrRealtyFreedomUI_ListPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, functi
 							"code": "PDS_CreatedBy",
 							"caption": "#ResourceString(PDS_CreatedBy)#",
 							"dataValueType": 10
-						},
+						}
 					],
+					"layoutConfig": {
+						"basis": "100%",
+						"width": 300
+					},
 					"primaryColumnName": "PDS_Id",
 					"sorting": "$ItemsSorting | crt.ToDataTableSortingConfig: 'Items'",
 					"selectionState": "$DataTable_SelectionState",
@@ -59,6 +59,14 @@ define("UsrRealtyFreedomUI_ListPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, functi
 								"multiple": true
 							}
 						}
+					},
+					"selectedRows": "$DataTable_SelectedRows",
+					"_filterOptions": {
+						"from": [
+							"Items",
+							"DataTable_SelectedRows"
+						],
+						"expose": []
 					}
 				}
 			},
@@ -214,7 +222,27 @@ define("UsrRealtyFreedomUI_ListPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, functi
 					"layoutConfig": {
 						"width": 328.125
 					},
-					"classes": ["section-folder-tree"]
+					"classes": [
+						"section-folder-tree"
+					],
+					"_filterOptions": {
+						"expose": [
+							{
+								"attribute": "FolderTree_active_folder_filter",
+								"converters": [
+									{
+										"converter": "crt.FolderTreeActiveFilterAttributeConverter",
+										"args": []
+									}
+								]
+							}
+						],
+						"from": [
+							"FolderTree_items",
+							"FolderTree_favoriteItems",
+							"FolderTree_active_folder_id"
+						]
+					}
 				},
 				"parentName": "SectionContentWrapper",
 				"propertyName": "items",
@@ -223,33 +251,12 @@ define("UsrRealtyFreedomUI_ListPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, functi
 		]/**SCHEMA_VIEW_CONFIG_DIFF*/,
 		viewModelConfig: /**SCHEMA_VIEW_MODEL_CONFIG*/{
 			"attributes": {
-				"ItemsSorting": {},
 				"Items": {
-					"isCollection": true,
-					"modelConfig": {
-						"path": "PDS",
-						"pagingConfig": {
-							"rowCount": 30
-						},
-						"sortingConfig": {
-							"attributeName": "ItemsSorting"
-						},
-						"filterAttributes": [
-							{
-								"loadOnChange": true,
-								"name": "FolderTree_active_folder_filter"
-							},
-							{
-								"name": "Items_PredefinedFilter",
-								"loadOnChange": true
-							}
-						]
-					},
 					"viewModelConfig": {
 						"attributes": {
 							"PDS_Id": {
 								"modelConfig": {
-									"path": 'PDS.Id',
+									"path": "PDS.Id"
 								}
 							},
 							"PDS_UsrName": {
@@ -268,8 +275,28 @@ define("UsrRealtyFreedomUI_ListPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, functi
 								}
 							}
 						}
+					},
+					"modelConfig": {
+						"path": "PDS",
+						"pagingConfig": {
+							"rowCount": 30
+						},
+						"sortingConfig": {
+							"attributeName": "ItemsSorting"
+						},
+						"filterAttributes": [
+							{
+								"loadOnChange": true,
+								"name": "FolderTree_active_folder_filter"
+							},
+							{
+								"name": "Items_PredefinedFilter",
+								"loadOnChange": true
+							}
+						]
 					}
 				},
+				"ItemsSorting": {},
 				"FolderTree_visible": {
 					"value": false
 				},

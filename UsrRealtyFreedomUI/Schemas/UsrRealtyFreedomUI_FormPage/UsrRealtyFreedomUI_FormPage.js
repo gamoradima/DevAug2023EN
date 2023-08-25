@@ -116,6 +116,69 @@ define("UsrRealtyFreedomUI_FormPage", /**SCHEMA_DEPS*/["@creatio-devkit/common"]
 			},
 			{
 				"operation": "insert",
+				"name": "MenuItem_AddVisits",
+				"values": {
+					"type": "crt.MenuItem",
+					"caption": "#ResourceString(MenuItem_shwnt0s_caption)#",
+					"visible": true,
+					"clicked": {
+						"request": "crt.RunBusinessProcessRequest",
+						"params": {
+							"processName": "UsrAutoAddRealtyVisitsFreedomUIProcess",
+							"processRunType": "ForTheSelectedPage",
+							"recordIdProcessParameterName": "ProcessSchemaParameter2"
+						}
+					},
+					"icon": "date"
+				},
+				"parentName": "Button_dpltik3",
+				"propertyName": "menuItems",
+				"index": 2
+			},
+			{
+				"operation": "insert",
+				"name": "MenuItem_UpdateVisits",
+				"values": {
+					"type": "crt.MenuItem",
+					"caption": "#ResourceString(MenuItem_50showg_caption)#",
+					"visible": true,
+					"clicked": {
+						"request": "crt.RunBusinessProcessRequest",
+						"params": {
+							"processName": "UsrUpdateRealtyVisitsFreedomUIDemoProcess",
+							"processRunType": "ForTheSelectedPage",
+							"recordIdProcessParameterName": "ProcessSchemaParameter1"
+						}
+					},
+					"icon": "pencil-button-icon"
+				},
+				"parentName": "Button_dpltik3",
+				"propertyName": "menuItems",
+				"index": 3
+			},
+			{
+				"operation": "insert",
+				"name": "MenuItem_DeleteVisits",
+				"values": {
+					"type": "crt.MenuItem",
+					"caption": "#ResourceString(MenuItem_ybjs4pe_caption)#",
+					"visible": true,
+					"clicked": {
+						"request": "crt.RunBusinessProcessRequest",
+						"params": {
+							"processName": "UsrDeleteRealtyVisitsProcess",
+							"processRunType": "ForTheSelectedPage",
+							"recordIdProcessParameterName": "ProcessSchemaParameter1"
+						}
+					},
+					"icon": "message-composer-cross"
+				},
+				"parentName": "Button_dpltik3",
+				"propertyName": "menuItems",
+				"index": 4
+			},
+			{
+				"operation": "insert",
 				"name": "Button_Push",
 				"values": {
 					"type": "crt.Button",
